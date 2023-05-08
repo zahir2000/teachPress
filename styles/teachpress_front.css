@@ -14,7 +14,7 @@
 /* enrollment menu */
 #enrollments .tp_user_menu {padding:5px;}
 
-/* table for user's old enrollments / table fo results */
+/* table for user's old enrollments / table fo results */ 
 #enrollments .teachpress_enr_old, #enrollments .teachpress_enr_results {border-collapse: collapse; border-bottom: 1px solid #ededed; font-size:11px; width: 100%}
 #enrollments .teachpress_enr_old th, #enrollments .teachpress_enr_results th{padding:5px; color:#333333; background-repeat:repeat-x; margin:5px; border-collapse: collapse; border-bottom: 1px solid #ededed; font-size:12px; font-weight:bold;}
 #enrollments .teachpress_enr_old tr, #enrollments .teachpress_enr_results tr {padding:5px; background-color:#FFFFFF; color:#000000; margin:5px; border-collapse: collapse; border-bottom: 1px solid #ededed; font-size:12px;}
@@ -51,15 +51,56 @@ h3.tp_enrollments {color:#005A46;}
 .teachpress_publication_list {width:100%; border:none; border-spacing: 0;}
 .teachpress_publication_list td, .teachpress_course_list td {padding:5px;}
 
+/* elementor max-height */
+.my-max-height--50 {max-height: 50px; overflow: hidden;}
+.qodef-shortcode.qodef-m.qodef-charts.qodef-alignment-horizontal--right.qodef-alignment-vertical--middle.qodef-appeared {
+    height: 300px !important;
+  }  
+
 /* filter and search field */
 .teachpress_filter {text-align:center; padding-top:5px;}
 .teachpress_filter select.block {display: block; width: 100%; margin-bottom:8px; margin-top:5px;}
 .teachpress_cloud {text-align:center;}
-input.tp_search_button {border: 1px solid silver; padding:6px 6px; font-size:0.9em; font-weight: bold; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; background:transparent; margin:0 0 0 6px; cursor:pointer;  background: #008bd2; color: #FFFFFF;}
+.tp_search_button {
+    position: relative !important;
+    right: 0 !important;
+    top: 1px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #0e202a !important;
+    background: 0 0 !important;
+    border: 0 !important;
+    outline: 0 !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    border: none !important;
+}
 input.tp_search_button:hover {background:#ECECEC; color:#333333;}
 a.tp_search_reset {background:transparent; cursor:pointer; border:none; font-weight: bold; padding:3px 6px; text-decoration: none; font-size:13px; color:#000;}
 a.tp_search_reset:hover {color:red;}
-#tp_search_input_field {width: 60%;}
+#tp_search_input_field {
+    width: 100%;
+    font-size: 13px;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 0 3px 0 0;
+    margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+    outline-offset: 0;
+    transition: width .4s ease-out;
+    white-space: nowrap;
+    color: #b1b6b8;
+}
+.tp_search_input {
+    display: flex;
+    align-items: center;
+    padding: 18px 21px 18px 21px;
+    border: 1px solid #b1b6b8;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
 .teachpress_search_button {display:inline-block;}
 
 /* active tags */
@@ -93,7 +134,7 @@ a.tp_show_block {font-weight: bold; text-decoration: none;}
 
 /* images */
 td.tp_pub_image_left, td.tp_pub_image_right{vertical-align: top; padding: 8px; border-bottom: 1px solid silver;}
-.tp_pub_image_bottom {display: inline-block; margin: auto; vertical-align: middle;}
+.tp_pub_image_bottom {text-align:center;}
 
 /*******************************************************/
 /* single publication, shortcode: [tpsingle], [tpcite] */
